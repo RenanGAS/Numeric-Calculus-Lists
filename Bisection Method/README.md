@@ -15,7 +15,7 @@ Encontraremos um intervalo **[α, β]** que contenha uma e somente uma raiz. Em 
     * **Ⲭk-1** corresponde ao resultado da iteração anterior, **Ⲭk** ao resultado da iteração atual, e **Ɛ** representa a precisão (Ex. **Ɛ = 10^-3**).
 
 
-### **Observações**
+### **Especificações**
 
 * Teorema: Se uma função contínua **f(Ⲭ)** assume valores de sinais opostos nos pontos extremos do intervalo **[α, b]**, isto é, **f(α) . f(β) < 0** , então, o intervalo conterá, no mínimo, uma raiz da equação. Em outras palavras, haverá, no mínimo, um número **ξ ∈ (α, β)**, tal que **f(ξ) = 0** ;
 

@@ -1,15 +1,13 @@
 from sympy import symbols
 
-print("\nMétodo da Bissecante")
-
-print("\nDigite a função:")
-str_f = input("\nf(x) = ")
-
-def f(x):
-    func = eval(str_f)
-    return func
-
 def main():
+    print("\nMétodo da Bissecante")
+
+    print("\nDigite a função:")
+    str_f = input("\nf(x) = ")
+
+    f = lambda x : eval(str_f)
+
     print("\nEscolha um intervalo [a, b] tal que f(a) . f(b) < 0 :")
     a = float(input("\na = "))
     b = float(input("\nb = "))

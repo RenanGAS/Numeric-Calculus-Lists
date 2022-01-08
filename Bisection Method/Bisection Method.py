@@ -34,25 +34,26 @@ def bisectionMethod(a, b, f, stopC, maxIt):
         
                 
 def main():
-    print("\nMétodo da Bissecante")
+    
+    print("\nMétodo da Bissecção")
 
     print("\nDigite a função:")
     str_f = input("\nf(x) = ")
 
-    f = lambda x : eval(str_f)
+    f = lambda x : eval(str_f)                                  # Cria uma função para realizar a substituição de variável na equação
 
     print("\nEscolha um intervalo [α, β] tal que f(α) . f(β) < 0 :")
     a = float(input("\nα = "))
     b = float(input("\nβ = "))
 
-    if f(a)*f(b) > 0:
+    if f(a)*f(b) > 0:                                           # Verifica se as entradas α e β satisfazem a condição
         print("\nErro: f(",a,") =", f(a), ", f(",b,") =",f(b))
         a = float(input("\nα = "))
         b = float(input("\nβ = "))
 
     print("\nEntradas aceitas: f(",a,") =", f(a),", f(",b,") =",f(b))
     
-    if a > b:
+    if a > b:                                                   # Garante que o intervalo seja válido: β > α
         aux = b
         b = a
         a = aux
@@ -65,7 +66,7 @@ def main():
     
     print("\nDado que α =", a,", β =", b,"e Ɛ =", stopC,"temos que o método realizará um número maior ou igual a", round((math.log2((b-a)/stopC)-1)),"iterações :\n")
     
-    bisectionMethod(a, b, f, stopC, maxIt)
+    bisectionMethod(a, b, f, stopC, maxIt)                      # Executa o Método da Bissecção
     
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-# Método da Bissecante
+# Método da Bissecção
 
 
 ### **Objetivo**

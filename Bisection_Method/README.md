@@ -8,7 +8,7 @@ Calcular a **raiz de uma função** (Determinar um valor para **Ⲭ** tal que **
 
 ### **Visão Geral**
 
-Encontraremos um intervalo **[α, β]** que contenha uma e somente uma raiz. Em seguida, definiremos uma raiz inicial **Ⲭ0** pertencente ao intervalo, e a refinaremos através de iterações até obtermos uma raiz que satisfaça o **Critério de Parada** desejado.
+Encontraremos um intervalo **[α, β]** que contenha uma e somente uma raiz. Em seguida, definiremos o ponto médio do intervalo como a raiz inicial **Ⲭ0**, e refinaremos a aproximação da raiz através de iterações (que continuaram realizando bissecções do intervalo) até obtermos um resultado que satisfaça o **Critério de Parada** desejado.
 
 * **Critério de Parada**: após cada iteração, verificamos se o resultado obtido tem a **precisão numérica** desejada. Para isso, utilizamos a fórmula: **| Ⲭk - Ⲭk-1 |  ⩽  Ɛ** . 
 

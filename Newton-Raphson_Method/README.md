@@ -27,3 +27,17 @@ Encontraremos um intervalo **[α, β]** que contenha uma e somente uma raiz. Em 
 ### **Aplicação do Método**
 
 Para encontrarmos um valor para **Ⲭk+1** que satisfaça o **Critério de Parada** e seja **raiz da função**, executamos os seguintes passos:
+
+1. Para K = 0 :
+
+    * Determinar se **Ⲭ0** receberá **α** ou **β** ;
+
+    * Ⲭ1 = Ⲭ0 - (f(Ⲭ0) ÷ f'(Ⲭ0)) ;
+
+    * Critério de Parada: | Ⲭ1 - Ⲭ0 |  ⩽  Ɛ ;
+
+2. Para K = η :
+
+    * ⲬK+1 = Ⲭk - (f(Ⲭk) ÷ f'(Ⲭk)) ;
+
+    * Critério de Parada: | Ⲭk+1 - Ⲭk |  ⩽  Ɛ .

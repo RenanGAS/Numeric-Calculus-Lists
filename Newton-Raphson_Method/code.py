@@ -44,7 +44,7 @@ def main():
     a = float(input("\nα = "))
     b = float(input("\nβ = "))
 
-    if f(a)*f(b) > 0:                                           # Verifica se as entradas α e β satisfazem a condição
+    while (f(a)*f(b) > 0) :                                           # Verifica se as entradas α e β satisfazem a condição
         print("\nErro: f(",a,") =", f(a), ", f(",b,") =",f(b))
         a = float(input("\nα = "))
         b = float(input("\nβ = "))

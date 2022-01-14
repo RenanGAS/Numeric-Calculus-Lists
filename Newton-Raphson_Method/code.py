@@ -26,6 +26,7 @@ def newtonRaphsonMethod(a, b, f, stopC, maxIt):
         if abs(xKPlus1 - xK) <= stopC :                         # Verifica o Critério de Parada
                 print(t)
                 print("\nRaiz da equação:",xKPlus1)
+                print("\n")
                 break
 
         xK = xKPlus1                                            # Atualiza o valor de xK para a próxima iteração
@@ -61,6 +62,8 @@ def main():
     stopC = float(eval(input("\nDigite o Critério de Parada desejado (Ex. 10**-3) : ")))
     
     maxIt = int(input("\nDigite o número máximo de iterações que o método deve realizar (Ex. 20) : "))
+
+    print("\n")
     
     newtonRaphsonMethod(a, b, f, stopC, maxIt)                      # Executa o Método de Newton-Raphson
 

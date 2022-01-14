@@ -14,15 +14,15 @@ def secantMethod(a, b, f, stopC, maxIt):
 
         xPlus = xK - ((f(xK) * (xK - xMinus)) / (f(xK) - f(xMinus)))    # Executa o método
                          
-        t.add_row([i, xMinus, xK, xPlus, abs(xPlus - xK)])                  # Gera as linhas da tabela
+        t.add_row([i, xMinus, xK, xPlus, abs(xPlus - xK)])              # Gera as linhas da tabela
             
-        if abs(xPlus - xK) <= stopC :                                 # Verifica o Critério de Parada
+        if abs(xPlus - xK) <= stopC :                                   # Verifica o Critério de Parada
                 print(t)
                 print("\nRaiz da equação:",xPlus)
                 print("\n")
                 break
 
-        xMinus = xK                                               # Atualiza os valores de xMinus e xK para a próxima iteração
+        xMinus = xK                                                     # Atualiza os valores de Ⲭk-1 e Ⲭk para a próxima iteração
         xK = xPlus
 
 

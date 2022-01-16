@@ -1,6 +1,6 @@
+from sympy import *                                             # Necessário para que o usuário possa colocar funções trigonométricas como entrada
 import math
 from prettytable import PrettyTable
-
     
 def bisectionMethod(a, b, f, stopC, maxIt):
     

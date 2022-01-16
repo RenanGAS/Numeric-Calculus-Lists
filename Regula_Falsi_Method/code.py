@@ -22,7 +22,7 @@ def regulaFalsiMethod(a, b, f, stopC, maxIt):
                 print("\n")
                 break
         
-        if ((f(xK)*f(xPlus)) < 0) :                                           # Faz a validação e atualiza o valor da entrada Ⲭk-1 (ou Ⲭ , por convenção)
+        if ((f(xK)*f(xPlus)) < 0) :                                     # Faz a validação e atualização do valor da entrada Ⲭk-1 (ou Ⲭ , por convenção)
             x = xK
                                                     
         xK = xPlus                                                      # Atualiza o valor de Ⲭk para a próxima iteração

@@ -1,29 +1,33 @@
-import tkinter as tk
+from sympy import *
+import math
+from prettytable import PrettyTable
 
-class App(tk.Frame):
-    def __init__(self, master):
-        super().__init__(master)
-        self.pack()
+def fixedPointMethod(g, xk, stopC, maxIt):
 
-        self.entrythingy = tk.Entry()
-        self.entrythingy.pack()
+    t = PrettyTable()                                                   # Cria a tabela
+    t.field_names = ["K", "xK-1 / x", "xK", "xK+1", "|xK+1 - xK|"]      # Define as colunas
 
-        # Create the application variable.
-        self.contents = tk.StringVar()
-        # Set it to some value.
-        self.contents.set("this is a variable")
-        # Tell the entry widget to watch this variable.
-        self.entrythingy["textvariable"] = self.contents
 
-        # Define a callback for when the user hits return.
-        # It prints the current value of the variable.
-        self.entrythingy.bind('<Key-Return>',
-                             self.print_contents)
+def main():
 
-    def print_contents(self, event):
-        print("Hi. The current entry content is:",
-              self.contents.get())
+    print("\nMétodo do Ponto Fixo")
 
-root = tk.Tk()
-myapp = App(root)
-myapp.mainloop()
+    print("\nDigite a função de iteração correspondente a função em questão:")
+    print("\nEx. f(x) = cos(x)-x -> g(x) = cos(x)")
+    str_g = input("\ng(x) = ")
+
+    g = lambda x : eval(str_g)                                          # Cria uma função para realizar a substituição de variável na equação
+    
+    xk = float(input("\nDigite um valor inicial, xk, para realização da aproximação:"))
+    
+    stopC = float(eval(input("\nDigite o Critério de Parada desejado (Ex. 10**-3) : ")))
+    
+    maxIt = int(input("\nDigite o número máximo de iterações que o método deve realizar (Ex. 20) : "))
+
+    print("\n")
+    
+    fixedPointMethod(g, xk, stopC, maxIt)                             # Executa o Método do Ponto Fixo
+
+
+if __name__ == "__main__":
+    main()

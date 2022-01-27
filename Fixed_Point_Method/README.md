@@ -35,3 +35,17 @@ Após determinar **F(Ⲭ)** , realizamos iterações sobre a expressão dada no 
 ### **Aplicação do Método**
 
 Para encontrarmos um valor para **Ⲭk+1** que satisfaça o **Critério de Parada** e seja **raiz da função**, executamos os seguintes passos:
+
+1. Para K = 0 :
+
+    * Atribuir a **Ⲭ0** qualquer valor dentro do intervalo **[α, β]** ;
+
+    * Ⲭ1 = F(Ⲭ0) ;
+
+    * Critério de Parada: | Ⲭ1 - Ⲭ0 |  ⩽  Ɛ ;
+
+2. Para K = η :
+
+    * ⲬK+1 = F(Ⲭk) ;
+
+    * Critério de Parada: | Ⲭk+1 - Ⲭk |  ⩽  Ɛ .

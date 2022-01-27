@@ -26,7 +26,7 @@ def fixedPointMethod(F, xK, stopC):
         numIt += 1                                                   
         
     if numIt == 200 :                                                   # Verifica a validade da Função de Iteração
-        print("\nFunção de Iteração inválida\n")
+        print("\nFunção de Iteração inválida\n")                        # Erro: Não impede que uma função inválida gere um resultado
         main()
         
 

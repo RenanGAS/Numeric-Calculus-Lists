@@ -1,3 +1,3 @@
-# Numerical Calculus
+# Cálculo Numérico
 
-Some Numerical Methods shown in Numerical Calculus Course
+Neste repositório temos alguns métodos numéricos ensinados no curso.

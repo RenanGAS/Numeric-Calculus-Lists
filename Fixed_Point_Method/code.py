@@ -1,10 +1,11 @@
+from numpy import *
 from sympy import *
 from prettytable import PrettyTable
 
-def fixedPointMethod(F, xK, stopC):
+def fixedPointMethod(f, F, xK, stopC):
 
     t = PrettyTable()                                                   # Cria a tabela
-    t.field_names = ["K", "xK", "xK+1", "|xK+1 - xK|"]                  # Define as colunas
+    t.field_names = ["K", "xK", "xK+1", "|f(xK+1)|"]                    # Define as colunas
     
     numIt = 0
     xKPlus1 = 0
@@ -13,10 +14,10 @@ def fixedPointMethod(F, xK, stopC):
         
         xKPlus1 = F(xK)                                                 # Executa o Método
         
-        t.add_row([numIt, xK, xKPlus1, abs(xKPlus1 - xK)])              # Gera as linhas da tabela
+        t.add_row([numIt, xK, xKPlus1, abs(f(xKPlus1))])                # Gera as linhas da tabela
         
-        if abs(xKPlus1 - xK) <= stopC :                                 # Verifica o Critério de Parada
-            print(t)
+        if abs(f(xKPlus1)) <= stopC :                                   # Toma como Critério de Parada o momento em que a aproximação xK+1 é uma raiz de f(Ⲭ) de precisão Ɛ 
+            print(t)                                                    # Faz-se uso disso para evitar que Funções de Iteração inapropriadas gerem resultados
             print("\nRaiz da função:", xKPlus1)
             print("\n")
             break
@@ -26,7 +27,7 @@ def fixedPointMethod(F, xK, stopC):
         numIt += 1                                                   
         
     if numIt == 200 :                                                   # Verifica a validade da Função de Iteração
-        print("\nFunção de Iteração inválida\n")                        # Erro: Não impede que uma função inválida gere um resultado
+        print("\nFunção de Iteração inválida\n")                   
         main()
         
 
@@ -70,7 +71,7 @@ def main():
 
     print("\n")
     
-    fixedPointMethod(F, xK, stopC)                                      # Executa o Método do Ponto Fixo
+    fixedPointMethod(f, F, xK, stopC)                                   # Executa o Método do Ponto Fixo
 
 
 if __name__ == "__main__":

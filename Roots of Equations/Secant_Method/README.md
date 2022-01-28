@@ -1,11 +1,6 @@
 # Método da Secante
 
 
-### **Objetivo**
-
-Calcular a **raiz de uma função** (Determinar um valor para **Ⲭ** tal que **f(Ⲭ) = 0**).
-
-
 ### **Visão Geral**
 
 Encontraremos um intervalo **[α, β]** que contenha uma e somente uma raiz. Em seguida, definiremos **Ⲭ0 = α** e **Ⲭ1 = β**, e aplicaremos o método. A ideia é traçarmos uma reta secante sobre os pontos **(x, y)** para **Ⲭ0** e **Ⲭ1**, e determinarmos a intersecção da mesma com o eixo das abscissas como **Ⲭ2** . A partir disso, se **f(α) < 0** , seguimos delineando retas secantes entre **β** e **ⲬK**, e caso contrário, entre **α** e **ⲬK**, até que **ⲬK+1** satisfaça o **Critério de Parada** desejado.

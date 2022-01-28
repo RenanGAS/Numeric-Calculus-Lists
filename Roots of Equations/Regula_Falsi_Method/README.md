@@ -1,11 +1,6 @@
 # Método Regula Falsi
 
 
-### **Objetivo**
-
-Calcular a **raiz de uma função** (Determinar um valor para **Ⲭ** tal que **f(Ⲭ) = 0**).
-
-
 ### **Visão Geral**
 
 Encontraremos um intervalo **[α, β]** que contenha uma e somente uma raiz. Em seguida, definiremos **Ⲭ0 = α** e **Ⲭ1 = β**, e aplicaremos o método. A ideia é traçarmos uma reta secante sobre os pontos **(x, y)** , para **Ⲭ0** e **Ⲭ1**, e determinarmos a intersecção da mesma com o eixo das abscissas como **Ⲭ2** . A partir disso, verificamos qual imagem, **f(Ⲭ0)** ou **f(Ⲭ1)**, tem sinal contrário à imagem **f(Ⲭ2)** , e delineamos outra reta secante entre **(Ⲭ2, f(Ⲭ2))** e o ponto que satisfaz a condição, sendo **Ⲭ3** a intersecção dessa reta com o eixo das abscissas. Essa seleção de pontos para construção da reta secante é o que diferencia o algoritmo do Método da Secante, e faz com que não obtenhamos resultados fora do intervalo **(α, β)** , agregando eficiência ao método. Realizamos essa validação de pontos e construção de retas secantes até que o resultado satisfaça o **Critério de Parada** desejado.

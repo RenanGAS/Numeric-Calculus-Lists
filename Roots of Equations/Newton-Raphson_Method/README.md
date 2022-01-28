@@ -1,11 +1,6 @@
 # Método de Newton-Raphson
 
 
-### **Objetivo**
-
-Calcular a **raiz de uma função** (Determinar um valor para **Ⲭ** tal que **f(Ⲭ) = 0**).
-
-
 ### **Visão Geral**
 
 Encontraremos um intervalo **[α, β]** que contenha uma e somente uma raiz. Em seguida, definiremos como **Ⲭ0** o valor de **α** ou **β**, dependendo de qual satisfazer a condição: **f(Ⲭ) . f''(Ⲭ) > 0** . Desse modo, sabendo que **f'(Ⲭ0) = tg(𝜃)** , temos que **f'(Ⲭ0) = f(Ⲭ0) ÷ (Ⲭ0 - Ⲭ1)** , sendo **Ⲭ1 = Ⲭ0 - (f(Ⲭ0) ÷ f'(Ⲭ0))** . Nesse contexto, **Ⲭ1** corresponde ao **ponto** em que, a reta que é tangente à função no ponto **f'(Ⲭ0)** , toca o **eixo das abscissas**. Realizaremos iterações sobre esse processo até que o resultado satisfaça o **Critério de Parada** desejado.

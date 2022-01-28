@@ -1,11 +1,6 @@
 # Método do Ponto Fixo
 
 
-### **Objetivo**
-
-Calcular a **raiz de uma função** (Determinar um valor para **Ⲭ** tal que **f(Ⲭ) = 0**).
-
-
 ### **Visão Geral**
 
 Encontraremos um intervalo **[α, β]** que contenha uma e somente uma raiz. Em seguida, definiremos uma Função de Iteração **F(Ⲭ)** de **f(Ⲭ)**, que satisfaça o seguinte teorema: 

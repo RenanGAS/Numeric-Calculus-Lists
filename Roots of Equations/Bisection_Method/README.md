@@ -1,11 +1,6 @@
 # Método da Bissecção
 
 
-### **Objetivo**
-
-Calcular a **raiz de uma função** (Determinar um valor para **Ⲭ** tal que **f(Ⲭ) = 0**).
-
-
 ### **Visão Geral**
 
 Encontraremos um intervalo **[α, β]** que contenha uma e somente uma raiz. Em seguida, definiremos o ponto médio do intervalo como a raiz inicial **Ⲭ0**, e refinaremos a aproximação da raiz através de iterações (que continuaram realizando bissecções do intervalo) até obtermos um resultado que satisfaça o **Critério de Parada** desejado.

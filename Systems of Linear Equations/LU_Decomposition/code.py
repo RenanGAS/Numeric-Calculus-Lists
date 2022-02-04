@@ -71,10 +71,10 @@ def main():
     print("\n\nEntradas de B:")
     print("\nB1 = 0 ; B2 = -7 ; B3 = -5\n")
     
-    A = np.zeros((3,3))
+    A = np.zeros((3,3))                                                 # Instanciação das matrizes A e B
     B = np.zeros((3, 1))
     
-    for i in range(3) : 
+    for i in range(3) :                                                 # Preenchimento das entradas de A e B
         print("\na",i+1,"1 = ", end = "")
         A[i][0] = float(input())
         print("a",i+1,"2 = ", end = "")
@@ -89,7 +89,7 @@ def main():
     print("\nMatriz B:\n")
     print(B)
     
-    lu_Decomposition(A, B)
+    lu_Decomposition(A, B)                                              # Executa o método da Decomposição LU
     
 if __name__ == "__main__" :
     main()

@@ -26,7 +26,7 @@ Para obtenção de **L** e **U** :
 
 4. li2 = (ai2 - li1 . u12) / u22 , i = 3, ..., η ;
 
-5. uij = aij - ∑ i-1 ; k = 1 (lik . ukj) , i ≤ j ;
+5. uij = aij - ∑ i-1 , k = 1 (lik . ukj) , i ≤ j ;
 
 
 Para solução do sistema (3 x 3) :
@@ -43,6 +43,6 @@ Para solução do sistema (3 x 3) :
 
     * X3 = Y3 / u33 ;
 
-    * X2 = (Y2 - u33 . X3) / u22 ;
+    * X2 = (Y2 - u23 . X3) / u22 ;
 
     * X1 = (Y1 - u12 . X2 - u13 . X3) / u11 .

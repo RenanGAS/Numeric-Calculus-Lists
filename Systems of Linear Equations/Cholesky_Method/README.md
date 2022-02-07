@@ -20,7 +20,7 @@ Para obtenção de **G** :
 
 1. Elementos na Diagonal Principal :
 
-    * g11 = <img src="https://latex.codecogs.com/svg.image?\sqrt{a11}"/> ;
+    * <img src="https://latex.codecogs.com/svg.image?g11&space;=&space;\sqrt{a11}&space;;&space;"/>
 
-    * gii = <img src="https://latex.codecogs.com/svg.image?(aii&space;-&space;\sum_{k=1}^{i-1}&space;(gik)^{2})^{1/2}&space;"/> , i = 2, 3, ..., η .
+    * <img src="https://latex.codecogs.com/svg.image?gii&space;=&space;(aii&space;-&space;\sum_{k=1}^{i-1}&space;(gik)^{2})^{1/2}&space;&space;"/> <img src="https://latex.codecogs.com/svg.image?,&space;i&space;=&space;2,&space;3,&space;...,&space;\eta&space;.&space;"/>
 

@@ -18,4 +18,9 @@ Para calcularmos as entradas da matriz **G** , temos fórmulas propostas pelo m�
 
 Para obtenção de **G** :
 
-1. <img src="https://latex.codecogs.com/svg.image?\sqrt{a11}" title="\sqrt{a11}" />;
+1. Elementos na Diagonal Principal :
+
+    * g11 = <img src="https://latex.codecogs.com/svg.image?\sqrt{a11}"/> ;
+
+    * gii = <img src="https://latex.codecogs.com/svg.image?(aii&space;-&space;\sum_{k=1}^{i-1}&space;(gik)^{2})^{1/2}&space;"/> , i = 2, 3, ..., η .
+

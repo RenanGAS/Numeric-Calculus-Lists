@@ -18,9 +18,16 @@ Para calcularmos as entradas da matriz **G** , temos fórmulas propostas pelo m�
 
 Para obtenção de **G** :
 
-1. Elementos na Diagonal Principal :
+1. Diagonal Principal :
 
-    * <img src="https://latex.codecogs.com/svg.image?g11&space;=&space;\sqrt{a11}&space;;&space;"/>
+    * <img src="https://latex.codecogs.com/svg.image?g11&space;=&space;\sqrt{a11}"/> ;
 
-    * <img src="https://latex.codecogs.com/svg.image?gii&space;=&space;(aii&space;-&space;\sum_{k=1}^{i-1}&space;(gik)^{2})^{1/2}&space;&space;"/> <img src="https://latex.codecogs.com/svg.image?,&space;i&space;=&space;2,&space;3,&space;...,&space;\eta&space;.&space;"/>
+    * <img src="https://latex.codecogs.com/svg.image?gii&space;=&space;(aii&space;-&space;\sum_{k=1}^{i-1}&space;(gik)^{2})^{1/2}&space;,&space;i&space;=&space;2,&space;3,&space;...,&space;\eta&space;"/> ;
 
+2. Demais elementos :
+
+    * <img src="https://latex.codecogs.com/svg.image?gi1&space;=&space;\frac{ai1}{g11}&space;,&space;i&space;=&space;2,&space;3,&space;...,&space;\eta&space;"/> ;
+
+    * <img src="https://latex.codecogs.com/svg.image?gi2&space;=&space;\frac{ai2-gi1.g21&space;}{g22}&space;,&space;i&space;=&space;3,&space;4,&space;...,&space;\eta&space;"/> ;
+
+    * <img src="https://latex.codecogs.com/svg.image?gij&space;=&space;\frac{aij&space;-&space;\sum_{k=1}^{j-1}&space;(gik.gjk)}{gjj}&space;,&space;2&space;\leqslant&space;j&space;<&space;i"/> .

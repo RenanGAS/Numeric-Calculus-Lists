@@ -31,3 +31,21 @@ Para obtenção de **G** :
     * <img src="https://latex.codecogs.com/svg.image?gi2&space;=&space;\frac{ai2-gi1.g21&space;}{g22}&space;,&space;i&space;=&space;3,&space;4,&space;...,&space;\eta&space;"/> ;
 
     * <img src="https://latex.codecogs.com/svg.image?gij&space;=&space;\frac{aij&space;-&space;\sum_{k=1}^{j-1}&space;(gik.gjk)}{gjj}&space;,&space;2&space;\leqslant&space;j&space;<&space;i"/> .
+
+Para solução do sistema (3 x 3) :
+
+1. G . Y = B :
+
+    * Y1 = B1 / g11 ;
+
+    * Y2 = (B2 - g21 . Y1) / g22 ;
+
+    * Y3 = (B3 - g31 . Y1 - g32 . Y2) / g33 .
+
+2. G<sup>t</sup> . X = Y : 
+
+    * X3 = Y3 / gT33 ;
+
+    * X2 = (Y2 - gT23 . X3) / gT22 ;
+
+    * X1 = (Y1 - gT12 . X2 - gT13 . X3) / gT11 .

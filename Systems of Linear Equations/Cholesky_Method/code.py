@@ -40,7 +40,7 @@ def cholesky_Method(A, B):
     
     X = np.zeros((3,1))                                                 # Instanciação da matriz X
     
-    X[2][0] = Y[2][0] / GT[2][2]                                         # Passos para o preenchimento da matriz X
+    X[2][0] = Y[2][0] / GT[2][2]                                        # Passos para o preenchimento da matriz X
 
     X[1][0] = (Y[1][0] - GT[1][2] * X[2][0]) / GT[1][1]
 
@@ -84,7 +84,7 @@ def main():
     print("\nMatriz B:\n")
     print(B)
     
-    cholesky_Method(A, B)                                              # Executa o Método de Cholesky
+    cholesky_Method(A, B)                                               # Executa o Método de Cholesky
     
 if __name__ == "__main__" :
     main()

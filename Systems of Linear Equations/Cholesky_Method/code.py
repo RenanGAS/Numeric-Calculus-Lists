@@ -11,14 +11,16 @@ def cholesky_Method(A, B):
     for i in range(2) :
         G[i+1][0] = A[i+1][0] / G[0][0]
     
-    for i in range(2) :
-        sum = 0
-        for k in range(i+1) :
-            sum += pow(G[i+1][k], 2)
-            
-        G[i+1][i+1] = pow((A[i+1][i+1] - sum), 0.5)                     # Erro: G[2][2] incorreta
-        
+    G[1][1] = pow((A[1][1] - pow(G[1][0], 2)), 0.5)
+
     G[2][1] = (A[2][1] - G[2][0] * G[1][0]) / G[1][1]
+
+    sum = 0
+
+    for k in range(2) :
+        sum += pow(G[2][k], 2)
+
+    G[2][2] = pow((A[2][2] - sum), 0.5)  
     
     print("\nMatriz G:\n")
     print(G)

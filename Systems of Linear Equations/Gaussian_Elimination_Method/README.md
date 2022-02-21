@@ -23,5 +23,3 @@ Os algoritmos acima identificam o **Método de Eliminação de Gauss** , que lev
 Para obtermos a Matriz Triangular Superior, temos a dinâmica das iterações e as fórmulas propostas pelo método. Devemos lembrar de realizar o pivotamento antes de cara ciclo, e após essas etapas, aplicar os algoritmos notáveis para a solução da nova matriz ampliada. 
 
 Para o cálculo da Matriz Triangular Superior (η = 3):
-
-1. K = 1, i = 2, j = 1 :

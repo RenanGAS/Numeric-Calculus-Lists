@@ -20,6 +20,54 @@ Os algoritmos acima identificam o **Método de Eliminação de Gauss** , que lev
 
 ### **Aplicação do Método**
 
-Para obtermos a Matriz Triangular Superior, temos a dinâmica das iterações e as fórmulas propostas pelo método. Devemos lembrar de realizar o pivotamento antes de cara ciclo, e após essas etapas, aplicar os algoritmos notáveis para a solução da nova matriz ampliada. 
+Para obtermos a Matriz Triangular Superior, temos a dinâmica das iterações e as fórmulas propostas pelo método. Devemos lembrar de realizar o pivotamento antes de cara ciclo, e após essas etapas, aplicar os algoritmos notáveis para a solução da matriz ampliada final. 
+
+* Exemplo de pivotamento :
+
+    * Dado a matriz <img src="https://latex.codecogs.com/svg.image?\begin{pmatrix}&space;1&space;&&space;&space;12&space;&&space;3&space;&&space;|&space;&&space;1\\&space;4&space;&&space;6&space;&&space;9&space;&&space;|&space;&&space;3\\&space;3&space;&&space;&space;5&space;&&space;7&space;&&space;|&space;&&space;7\\\end{pmatrix}"/> , ao pivotarmos o elemento <img src="https://latex.codecogs.com/svg.image?a_{11}"/> temos o seguinte resultado:
+
+        * <img src="https://latex.codecogs.com/svg.image?\begin{pmatrix}&space;4&space;&&space;6&space;&&space;9&space;&&space;|&space;&&space;3\\&space;1&space;&&space;&space;12&space;&&space;3&space;&&space;|&space;&&space;1\\&space;3&space;&&space;&space;5&space;&&space;7&space;&&space;|&space;&&space;7\\\end{pmatrix}"/> .
+        
 
 Para o cálculo da Matriz Triangular Superior (η = 3):
+
+* Pivotamento da entrada <img src="https://latex.codecogs.com/svg.image?a_{11}"/> ;
+
+* K = 1, i = 2, j = 1 :
+
+    * <img src="https://latex.codecogs.com/svg.image?{a_{21}}^{(2)}&space;=&space;{a_{21}}^{(1)}&space;-&space;{a_{11}}^{(1)}\frac{{a_{21}}^{(1)}}{{a_{11}}^{(1)}}"/> ;
+
+* K = 1, i = 2, j = 2 :
+
+    * <img src="https://latex.codecogs.com/svg.image?{a_{22}}^{(2)}&space;=&space;{a_{22}}^{(1)}&space;-&space;{a_{12}}^{(1)}\frac{{a_{21}}^{(1)}}{{a_{11}}^{(1)}}"/> ;
+
+* K = 1, i = 2, j = 3 :
+
+    * <img src="https://latex.codecogs.com/svg.image?{a_{23}}^{(2)}&space;=&space;{a_{23}}^{(1)}&space;-&space;{a_{13}}^{(1)}\frac{{a_{21}}^{(1)}}{{a_{11}}^{(1)}}"/> ;
+
+    * <img src="https://latex.codecogs.com/svg.image?{b_{2}}^{(2)}&space;=&space;{b_{2}}^{(1)}&space;-&space;{b_{1}}^{(1)}\frac{{a_{21}}^{(1)}}{{a_{11}}^{(1)}}"/> ;
+
+* Pivotamento da entrada <img src="https://latex.codecogs.com/svg.image?a_{22}"/> ;
+
+* K = 2, i = 3, j = 1 :
+
+    * <img src="https://latex.codecogs.com/svg.image?{a_{31}}^{(3)}&space;=&space;{a_{31}}^{(2)}&space;-&space;{a_{21}}^{(2)}\frac{{a_{32}}^{(2)}}{{a_{22}}^{(2)}}"/> ;
+ 
+* K = 2, i = 3, j = 2 :
+
+    * <img src="https://latex.codecogs.com/svg.image?{a_{32}}^{(3)}&space;=&space;{a_{32}}^{(2)}&space;-&space;{a_{22}}^{(2)}\frac{{a_{32}}^{(2)}}{{a_{22}}^{(2)}}"/> ;
+
+* K = 2, i = 3, j = 3 :
+
+    * <img src="https://latex.codecogs.com/svg.image?{a_{33}}^{(3)}&space;=&space;{a_{33}}^{(2)}&space;-&space;{a_{23}}^{(2)}\frac{{a_{32}}^{(2)}}{{a_{22}}^{(2)}}"/> ;
+
+    * <img src="https://latex.codecogs.com/svg.image?{b_{3}}^{(3)}&space;=&space;{b_{3}}^{(2)}&space;-&space;{b_{2}}^{(2)}\frac{{a_{32}}^{(2)}}{{a_{22}}^{(2)}}"/> .
+
+
+Para solução da matriz :
+
+* <img src="https://latex.codecogs.com/svg.image?x_{3}&space;=&space;\frac{b_{3}}{a_{33}}"/> ;
+
+* <img src="https://latex.codecogs.com/svg.image?x_{2}&space;=&space;\frac{b_{2}&space;-&space;a_{23}\frac{b_{3}}{a_{33}}}{{a_{22}}}"/> ;
+
+* <img src="https://latex.codecogs.com/svg.image?x_{1}&space;=&space;\frac{b_{1}&space;-&space;a_{12}\frac{b_{2}&space;-&space;a_{23}\frac{b_{3}}{a_{33}}}{a_{22}}&space;-&space;a_{13}\frac{b_{3}}{a_{33}}}{{a_{11}}"/> .
